@@ -2,7 +2,8 @@ const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1
 
 //const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const target = 1;
+
+const target = -1;
 //const target = -1;
 
 function binarySearch(arr, target, low, high) {
@@ -10,7 +11,7 @@ function binarySearch(arr, target, low, high) {
         return false;
     }
     const mid = Math.floor((low + high) / 2);
-    //console.log(`Searching in range [${low}, ${high}], mid: ${mid}, mid value: ${arr[mid]}`);
+    // console.log(`Searching in range [${low}, ${high}], mid: ${mid}, mid value: ${arr[mid]}`);
     if (arr[mid] === target) {
         return true;
     } else if (arr[mid] > target) {
